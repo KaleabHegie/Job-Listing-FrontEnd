@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="section">
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <!-- Logo on the left -->
+            <div class="flex-shrink-0">
+              <img class="h-8" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="Logo">
+            </div>
+      
+            <!-- Menu items centered -->
+            <div class="flex-1 flex justify-center">
+              <div class="hidden sm:block">
+                <div class="flex space-x-4">
+                  <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                  <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Jobs</a>
+                  <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                  <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Privacy</a>
+                  <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                  <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Sign Up button on the right -->
+            <div class="hidden sm:block">
+              <a href="#" class="text-white bg-indigo-600 hover:bg-indigo-500 px-5 py-3 rounded-md text-sm font-medium">Sign Up</a>
+            </div>
+            <div class="hidden sm:block">
+                <a href="#" class="text-white ml-4 bg-green-600 hover:bg-green-500 px-5 py-3 rounded-md text-sm font-medium">Login</a>
+              </div>
+      
+            <!-- Mobile menu button -->
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!-- Icon when menu is closed. Heroicon name: outline/menu -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+                <!-- Icon when menu is open. Heroicon name: outline/x -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Jobs</a>
+            <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">About</a>
+            <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Privacy</a>
+            <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
+            <a href="#" class="text-white bg-indigo-600 hover:bg-indigo-500 block px-3 py-2 rounded-md text-base font-medium">Sign Up</a>
+            <a href="#" class="text-white bg-green-600 hover:bg-green-500 block px-3 py-2 rounded-md text-base font-medium">Login</a>
+          </div>
+        </div>
+      </nav>
+  </div>
+
+  <div class="section">
+    <section class="relative bg-gray-700 overflow-hidden" style="clip-path: ellipse(100% 90% at 50% 10%);">
+        <div class="max-w-7xl mx-auto py-24 px-6 lg:px-8">
+            <div class="flex justify-center"> <!-- Added flex container to center the text -->
+                <h1 class="text-10xl tracking-tight text-white text-center sm:text-4xl">Home > Jobs</h1>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+<div class="max-w-6xl mx-auto p-6 bg-white mt-10">
+    <h2 class="text-3xl font-semibold text-red-500 mb-4">
+        <i class="fas fa-briefcase mr-2"></i> Software Engineer
+    </h2>
+    <p class="text-lg text-gray-600 mb-2">
+        <i class="fas fa-building mr-2"></i> <strong>Company:</strong> Tech Innovations Inc.
+    </p>
+    <p class="text-lg text-gray-600 mb-2">
+        <i class="fas fa-map-marker-alt mr-2"></i> <strong>Location:</strong> New York, NY
+    </p>
+    <p class="text-lg text-gray-600 mb-2">
+        <i class="fas fa-dollar-sign mr-2"></i> <strong>Salary:</strong> $80,000 - $100,000 per year
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+            <h3 class="text-xl font-semibold text-red-500 mt-6 mb-2">
+                <i class="fas fa-info-circle mr-2"></i> Job Description
+            </h3>
+            <p class="text-gray-700 mb-4">
+                We are looking for a skilled Software Engineer to join our dynamic team. The ideal candidate will have experience in building scalable applications and a passion for technology.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold text-red-500 mt-6 mb-2">
+                <i class="fas fa-file-alt mr-2"></i> Job Summary
+            </h3>
+            <p class="text-gray-700 mb-4">
+                This position involves working closely with other engineers and product teams to create innovative solutions. The candidate should be adaptable and willing to learn new technologies.
+            </p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div>
+            <h3 class="text-xl font-semibold text-red-500 mt-6 mb-2">
+                <i class="fas fa-tasks mr-2"></i> Responsibilities
+            </h3>
+            <ul class="list-disc list-inside text-gray-700 mb-4">
+                <li>Develop and maintain web applications using modern frameworks.</li>
+                <li>Collaborate with cross-functional teams to define, design, and ship new features.</li>
+                <li>Troubleshoot and debug applications to optimize performance.</li>
+                <li>Participate in code reviews and maintain code quality.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold text-red-500 mt-6 mb-2">
+                <i class="fas fa-check-circle mr-2"></i> Requirements
+            </h3>
+            <ul class="list-disc list-inside text-gray-700 mb-4">
+                <li>Bachelor's degree in Computer Science or related field.</li>
+                <li>2+ years of experience in software development.</li>
+                <li>Proficient in JavaScript, HTML, CSS, and modern frameworks (e.g., React, Angular).</li>
+                <li>Strong problem-solving skills and attention to detail.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="flex justify-end mt-6">
+        <button class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md mr-2">
+            <i class="fas fa-paper-plane mr-1"></i> Apply Now
+        </button>
+        <button class="text-white bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-md mr-2">
+            <i class="fas fa-bookmark mr-1"></i> Bookmark
+        </button>
+        <button class="text-white bg-gray-400 hover:bg-gray-500 px-4 py-2 rounded-md">
+            <i class="fas fa-arrow-left mr-1"></i> Back to Listings
+        </button>
+    </div>
+</div>
+
+
+
+
+<footer class="bg-gray-800 py-12">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- For Candidate Section -->
+      <div>
+        <h3 class="text-white text-lg font-semibold">For Candidate</h3>
+        <ul class="mt-4 space-y-2">
+          <li class="flex items-center">
+            <i class="fas fa-chevron-right text-indigo-600 mr-2"></i>
+            <a href="#" class="text-gray-300 hover:text-white">Browse Jobs</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-chevron-right text-indigo-600 mr-2"></i>
+            <a href="#" class="text-gray-300 hover:text-white">Account</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-chevron-right text-indigo-600 mr-2"></i>
+            <a href="#" class="text-gray-300 hover:text-white">Browse Categories</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-chevron-right text-indigo-600 mr-2"></i>
+            <a href="#" class="text-gray-300 hover:text-white">Resume</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-chevron-right text-indigo-600 mr-2"></i>
+            <a href="#" class="text-gray-300 hover:text-white">Job List</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-chevron-right text-indigo-600 mr-2"></i>
+            <a href="#" class="text-gray-300 hover:text-white">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div>
+        <h3 class="text-white text-lg font-semibold">Quick Links</h3>
+        <ul class="mt-4 space-y-2">
+          <li class="flex items-center">
+            <i class="fas fa-chevron-right text-indigo-600 mr-2"></i>
+            <a href="#" class="text-gray-300 hover:text-white">Home</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-chevron-right text-indigo-600 mr-2"></i>
+            <a href="#" class="text-gray-300 hover:text-white">About</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-chevron-right text-indigo-600 mr-2"></i>
+            <a href="#" class="text-gray-300 hover:text-white">FAQ</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-chevron-right text-indigo-600 mr-2"></i>
+            <a href="#" class="text-gray-300 hover:text-white">Pricing</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-chevron-right text-indigo-600 mr-2"></i>
+            <a href="#" class="text-gray-300 hover:text-white">Privacy</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-chevron-right text-indigo-600 mr-2"></i>
+            <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Information Section -->
+      <div>
+        <h3 class="text-white text-lg font-semibold">Information</h3>
+        <p class="mt-4 text-gray-400 flex items-center">
+          <i class="fas fa-phone-alt text-green-400 mr-2"></i>
+          <span>+101 984 754</span>
+        </p>
+        <p class="text-gray-400 flex items-center">
+          <i class="fas fa-envelope text-blue-400 mr-2"></i>
+          <span>info@yourcompany.com</span>
+        </p>
+        <p class="text-gray-400 flex items-center">
+          <i class="fas fa-map-marker-alt text-red-400 mr-2"></i>
+          <span>123, Denver, USA</span>
+        </p>
+      </div>
+
+      <!-- Company Description & Social Media Section -->
+      <div>
+        <h3 class="text-white text-lg font-semibold">About Us</h3>
+        <p class="mt-4 text-gray-400">We are dedicated to connecting talented individuals with top employers. Our mission is to simplify the job search process and help candidates find their dream jobs.</p>
+        <h4 class="mt-6 text-white text-lg font-semibold">Follow Us</h4>
+        <ul class="mt-4 flex space-x-4">
+          <li>
+            <a href="#" class="text-gray-300 hover:text-white">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-300 hover:text-white">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-300 hover:text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-300 hover:text-white">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-8 border-t border-gray-700 pt-4 text-center">
+      <p class="text-gray-400 text-sm">&copy; 2024 Your Company Name. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>  

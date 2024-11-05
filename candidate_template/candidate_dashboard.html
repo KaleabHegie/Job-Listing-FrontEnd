@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="section">
+        <nav class="bg-white shadow-md fixed w-full z-10 top-0">
+            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo on the left -->
+                    <div class="flex items-center">
+                        <!-- You can add your logo here -->
+                    </div>
+    
+                    <!-- Menu items centered -->
+                    <div class="flex-1 flex justify-center">
+                        <div class="hidden sm:block">
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                                <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Jobs</a>
+                                <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                                <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Privacy</a>
+                                <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                                <a href="#" class="text-gray-900 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Sign Up and Login buttons on the right -->
+                    <div class="hidden sm:block">
+                        <a href="#" class="text-white bg-indigo-600 hover:bg-indigo-500 px-5 py-3 rounded-md text-sm font-medium">Sign Up</a>
+                    </div>
+                    <div class="hidden sm:block">
+                        <a href="#" class="text-white ml-4 bg-green-600 hover:bg-green-500 px-5 py-3 rounded-md text-sm font-medium">Login</a>
+                    </div>
+    
+                    <!-- Mobile menu button -->
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <!-- Icon when menu is closed -->
+                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                            <!-- Icon when menu is open -->
+                            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Mobile menu, show/hide based on menu state -->
+            <div class="sm:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Jobs</a>
+                    <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Privacy</a>
+                    <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    <a href="#" class="text-gray-900 hover:bg-gray-200 block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
+                    <a href="#" class="text-white bg-indigo-600 hover:bg-indigo-500 block px-3 py-2 rounded-md text-base font-medium">Sign Up</a>
+                    <a href="#" class="text-white bg-green-600 hover:bg-green-500 block px-3 py-2 rounded-md text-base font-medium">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    
+      
+
+       
+       
+        
+    <div class="mt-16 flex">
+        <!-- Sidebar -->
+        <aside class="fixed left-0 top-16 h-full bg-gray-800 p-4 shadow-xl" style="width:18%;">
+            <div class="flex flex-col items-center mb-4">
+                <img src="https://via.placeholder.com/50" alt="Profile Picture" class="rounded-full w-12 h-12 mb-2"> <!-- Profile Picture -->
+                <h2 class="text-xl font-semibold text-white">James Brown</h2>
+            </div>
+            
+            <ul class="space-y-2">
+                <li>
+                    <div class="flex items-center cursor-pointer p-2 text-gray-300 hover:bg-indigo-600 rounded-md" id="profileToggle">
+                        <i class="fas fa-user mr-2"></i>
+                        Profile
+                        <i class="fas fa-chevron-down ml-auto" id="profileIcon"></i>
+                    </div>
+                    <ul class="ml-6 mt-2 space-y-1 hidden" id="profileItems">
+                        <li>
+                            <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
+                                <i class="fas fa-eye mr-2"></i>
+                                View Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
+                                <i class="fas fa-graduation-cap mr-2"></i>
+                                Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
+                                <i class="fas fa-skill mr-2"></i>
+                                Skills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
+                                <i class="fas fa-tasks mr-2"></i>
+                                Experience
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
+                        <i class="fas fa-briefcase mr-2"></i>
+                        Applied Jobs
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
+                        <i class="fas fa-bookmark mr-2"></i>
+                        Bookmarked Jobs
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
+                        <i class="fas fa-comments mr-2"></i>
+                        Messages
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
+                        <i class="fas fa-cog mr-2"></i>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    
+        <!-- Main Content Area -->
+        <div class="ml-[18%] w-[82%] p-6 bg-gray-lighter">
+            <div class="flex">
+                <!-- Left Column: User Image, Contact Info, Languages -->
+                <div style="width: 30%;" class="border-r border-gray-300 pr-6">
+                    <!-- User Image -->
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="https://via.placeholder.com/100" alt="Profile Picture" class="rounded-full mb-4">
+                        <h2 class="text-2xl font-semibold text-gray-800">James Brown</h2>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Contact Info</h3>
+                        <p class="text-gray-600">Email: james.brown@example.com</p>
+                        <p class="text-gray-600">Phone: (123) 456-7890</p>
+                    </div>
+            
+                    <!-- Language -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Languages</h3>
+                        <ul class="list-disc ml-5 text-gray-600">
+                            <li>English</li>
+                            <li>Spanish</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Right Column: Education & Work Experience -->
+                <div style="width: 70%;">
+                    <!-- Education Section -->
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Education</h3>
+                        <ul class="list-disc ml-5 text-gray-600">
+                            <li>Bachelor of Science in Computer Science - University A (2015 - 2019)</li>
+                            <li>Master of Science in Software Engineering - University B (2019 - 2021)</li>
+                        </ul>
+                    </div>
+            
+                    <!-- Work Experience Section -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Work Experience</h3>
+                        <ul class="list-disc ml-5 text-gray-600">
+                            <li>Software Engineer at Company X (2021 - Present)</li>
+                            <li>Intern at Company Y (2019 - 2021)</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+</body>
+<script>
+    // JavaScript to handle collapsible profile section
+    const profileToggle = document.getElementById('profileToggle');
+    const profileItems = document.getElementById('profileItems');
+    const profileIcon = document.getElementById('profileIcon');
+
+    profileToggle.addEventListener('click', () => {
+        profileItems.classList.toggle('hidden');
+        profileIcon.classList.toggle('fa-chevron-down');
+        profileIcon.classList.toggle('fa-chevron-up');
+    });
+</script>
+</html>

@@ -1,0 +1,11 @@
+.bg-fixed {
+    background-attachment: fixed; /* This will create the parallax effect */
+}
+
+.bg-cover {
+    background-size: cover; /* This ensures the image covers the entire section */
+}
+
+.bg-center {
+    background-position: center; /* Centers the background image */
+}
