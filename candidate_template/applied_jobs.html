@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <div id="navbar"></div>
+    
+    
+      
+
+       
+       
+        
+    <div class="mt-16 flex">
+        <!-- Sidebar -->
+        <div id="sidebar"></div>
+        
+    
+        <!-- Main Content Area -->
+        <div class="ml-[18%] w-[82%] p-6 bg-gray-lighter">
+            <div class="dashboard-widg-bar mb-5">
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12">
+                    <div class="mb-4 rounded overflow-hidden">
+                      <div class="table-responsive bg-white shadow-md rounded-lg">
+                        <table class="table table-auto w-full">
+                          <thead class="bg-gray-800 text-white">
+                            <tr>
+                              <th scope="col" class="px-4 py-2 text-left">Job Title</th>
+                              <th scope="col" class="px-4 py-2 text-left">Vacancies</th>
+                              <th scope="col" class="px-4 py-2 text-left">Applied Date</th>
+                              <th scope="col" class="px-4 py-2 text-left">Application Status</th>
+                              <th scope="col" class="px-4 py-2 text-left">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody class="bg-white">
+                            <!-- Row 1 -->
+                            <tr class="border-b">
+                              <td class="px-4 py-2">
+                                <i class="fas fa-briefcase text-blue-500 mr-2"></i> Software Engineer
+                              </td>
+                              <td class="px-4 py-2">5</td>
+                              <td class="px-4 py-2">2024-11-01</td>
+                              <td class="px-4 py-2 text-green-600">Approved</td>
+                              <td class="px-4 py-2">
+                                <a href="#" class="text-blue-500 hover:underline"><i class="fas fa-eye mr-1"></i></a>
+                                <a href="#" class="text-red-500 hover:underline ml-3"><i class="fas fa-trash-alt mr-1"></i></a>
+                              </td>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr class="border-b">
+                              <td class="px-4 py-2">
+                                <i class="fas fa-briefcase text-blue-500 mr-2"></i> Product Manager
+                              </td>
+                              <td class="px-4 py-2">3</td>
+                              <td class="px-4 py-2">2024-10-28</td>
+                              <td class="px-4 py-2 text-yellow-600">Pending</td>
+                              <td class="px-4 py-2">
+                                <a href="#" class="text-blue-500 hover:underline"><i class="fas fa-eye mr-1"></i></a>
+                                <a href="#" class="text-red-500 hover:underline ml-3"><i class="fas fa-trash-alt mr-1"></i></a>
+                              </td>
+                            </tr>
+                            <!-- Row 3 -->
+                            <tr class="border-b">
+                              <td class="px-4 py-2">
+                                <i class="fas fa-briefcase text-blue-500 mr-2"></i> Data Analyst
+                              </td>
+                              <td class="px-4 py-2">2</td>
+                              <td class="px-4 py-2">2024-10-15</td>
+                              <td class="px-4 py-2 text-red-600">Rejected</td>
+                              <td class="px-4 py-2">
+                                <a href="#" class="text-blue-500 hover:underline"><i class="fas fa-eye mr-1"></i></a>
+                                <a href="#" class="text-red-500 hover:underline ml-3"><i class="fas fa-trash-alt mr-1"></i></a>
+                              </td>
+                            </tr>
+                            <!-- Row 4 -->
+                            <tr class="border-b">
+                              <td class="px-4 py-2">
+                                <i class="fas fa-briefcase text-blue-500 mr-2"></i> UI/UX Designer
+                              </td>
+                              <td class="px-4 py-2">4</td>
+                              <td class="px-4 py-2">2024-11-10</td>
+                              <td class="px-4 py-2 text-green-600">Approved</td>
+                              <td class="px-4 py-2">
+                                <a href="#" class="text-blue-500 hover:underline"><i class="fas fa-eye mr-1"></i></a>
+                                <a href="#" class="text-red-500 hover:underline ml-3"><i class="fas fa-trash-alt mr-1"></i></a>
+                              </td>
+                            </tr>
+                            <!-- Row 5 -->
+                            <tr>
+                              <td class="px-4 py-2">
+                                <i class="fas fa-briefcase text-blue-500 mr-2"></i> DevOps Engineer
+                              </td>
+                              <td class="px-4 py-2">1</td>
+                              <td class="px-4 py-2">2024-11-05</td>
+                              <td class="px-4 py-2 text-yellow-600">Pending</td>
+                              <td class="px-4 py-2">
+                                <a href="#" class="text-blue-500 hover:underline"><i class="fas fa-eye mr-1"></i></a>
+                                <a href="#" class="text-red-500 hover:underline ml-3"><i class="fas fa-trash-alt mr-1"></i></a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+    
+
+    
+
+</body>
+<script>
+    // JavaScript to handle collapsible profile section
+    const profileToggle = document.getElementById('profileToggle');
+    const profileItems = document.getElementById('profileItems');
+    const profileIcon = document.getElementById('profileIcon');
+
+    profileToggle.addEventListener('click', () => {
+        profileItems.classList.toggle('hidden');
+        profileIcon.classList.toggle('fa-chevron-down');
+        profileIcon.classList.toggle('fa-chevron-up');
+    });
+</script>
+<script>
+    fetch('include/navbar.html')
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Navbar file not found or inaccessible.');
+          }
+          return response.text();
+      })
+      .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+      fetch('include/candidate_sidebar.html')
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Navbar file not found or inaccessible.');
+          }
+          return response.text();
+      })
+      .then(data => {
+          document.getElementById('sidebar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+</script>
+</html>
