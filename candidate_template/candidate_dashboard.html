@@ -148,16 +148,21 @@
 
 </body>
 <script>
-    // JavaScript to handle collapsible profile section
-    const profileToggle = document.getElementById('profileToggle');
-    const profileItems = document.getElementById('profileItems');
-    const profileIcon = document.getElementById('profileIcon');
+    document.addEventListener('click', (event) => {
+    const profileToggle = event.target.closest('#profileToggle');
+    if (profileToggle) {
+        const profileItems = document.getElementById('profileItems');
+        const profileIcon = document.getElementById('profileIcon');
 
-    profileToggle.addEventListener('click', () => {
-        profileItems.classList.toggle('hidden');
-        profileIcon.classList.toggle('fa-chevron-down');
-        profileIcon.classList.toggle('fa-chevron-up');
-    });
+        if (profileItems && profileIcon) {
+            profileItems.classList.toggle('hidden');
+            profileIcon.classList.toggle('fa-chevron-down');
+            profileIcon.classList.toggle('fa-chevron-up');
+        } else {
+            console.error('Sidebar elements not found.');
+        }
+    }
+});
 </script>
 <script>
     fetch('include/navbar.html')

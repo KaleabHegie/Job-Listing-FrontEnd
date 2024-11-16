@@ -68,32 +68,37 @@
                     <span class="text-gray-700">All Locations</span>
                   </label>
                   <label class="flex items-center space-x-2">
-                    <input type="radio" name="location" value="location1" class="text-indigo-600 focus:ring-indigo-500">
-                    <span class="text-gray-700">Location 1</span>
+                    <input type="radio" name="location" value="new_york" class="text-indigo-600 focus:ring-indigo-500">
+                    <span class="text-gray-700">New York</span>
                   </label>
                   <label class="flex items-center space-x-2">
-                    <input type="radio" name="location" value="location2" class="text-indigo-600 focus:ring-indigo-500">
-                    <span class="text-gray-700">Location 2</span>
+                    <input type="radio" name="location" value="san_francisco" class="text-indigo-600 focus:ring-indigo-500">
+                    <span class="text-gray-700">San Francisco</span>
                   </label>
                   <label class="flex items-center space-x-2">
-                    <input type="radio" name="location" value="location1" class="text-indigo-600 focus:ring-indigo-500">
-                    <span class="text-gray-700">Location 1</span>
+                    <input type="radio" name="location" value="london" class="text-indigo-600 focus:ring-indigo-500">
+                    <span class="text-gray-700">London</span>
                   </label>
                   <label class="flex items-center space-x-2">
-                    <input type="radio" name="location" value="location2" class="text-indigo-600 focus:ring-indigo-500">
-                    <span class="text-gray-700">Location 2</span>
+                    <input type="radio" name="location" value="berlin" class="text-indigo-600 focus:ring-indigo-500">
+                    <span class="text-gray-700">Berlin</span>
                   </label>
                   <label class="flex items-center space-x-2">
-                    <input type="radio" name="location" value="location1" class="text-indigo-600 focus:ring-indigo-500">
-                    <span class="text-gray-700">Location 1</span>
+                    <input type="radio" name="location" value="sydney" class="text-indigo-600 focus:ring-indigo-500">
+                    <span class="text-gray-700">Sydney</span>
                   </label>
                   <label class="flex items-center space-x-2">
-                    <input type="radio" name="location" value="location2" class="text-indigo-600 focus:ring-indigo-500">
-                    <span class="text-gray-700">Location 2</span>
+                    <input type="radio" name="location" value="tokyo" class="text-indigo-600 focus:ring-indigo-500">
+                    <span class="text-gray-700">Tokyo</span>
+                  </label>
+                  <label class="flex items-center space-x-2">
+                    <input type="radio" name="location" value="dubai" class="text-indigo-600 focus:ring-indigo-500">
+                    <span class="text-gray-700">Dubai</span>
                   </label>
                   <!-- Add more locations as needed -->
                 </div>
               </div>
+              
             
               <!-- Company Filter -->
               <div>
@@ -104,31 +109,32 @@
                     <span class="text-gray-700">All Companies</span>
                   </label>
                   <label class="flex items-center space-x-2">
-                    <input type="radio" name="company" value="company1" class="text-indigo-600 focus:ring-indigo-500">
-                    <span class="text-gray-700">Company 1</span>
+                    <input type="radio" name="company" value="microsoft" class="text-indigo-600 focus:ring-indigo-500">
+                    <span class="text-gray-700">Microsoft</span>
                   </label>
                   <label class="flex items-center space-x-2">
-                    <input type="radio" name="company" value="company2" class="text-indigo-600 focus:ring-indigo-500">
-                    <span class="text-gray-700">Company 2</span>
+                    <input type="radio" name="company" value="google" class="text-indigo-600 focus:ring-indigo-500">
+                    <span class="text-gray-700">Google</span>
                   </label>
                   <label class="flex items-center space-x-2">
-                    <input type="radio" name="company" value="company1" class="text-indigo-600 focus:ring-indigo-500">
-                    <span class="text-gray-700">Company 1</span>
+                    <input type="radio" name="company" value="amazon" class="text-indigo-600 focus:ring-indigo-500">
+                    <span class="text-gray-700">Amazon</span>
                   </label>
                   <label class="flex items-center space-x-2">
-                    <input type="radio" name="company" value="company2" class="text-indigo-600 focus:ring-indigo-500">
-                    <span class="text-gray-700">Company 2</span>
+                    <input type="radio" name="company" value="apple" class="text-indigo-600 focus:ring-indigo-500">
+                    <span class="text-gray-700">Apple</span>
                   </label>
                   <label class="flex items-center space-x-2">
-                    <input type="radio" name="company" value="company1" class="text-indigo-600 focus:ring-indigo-500">
-                    <span class="text-gray-700">Company 1</span>
+                    <input type="radio" name="company" value="facebook" class="text-indigo-600 focus:ring-indigo-500">
+                    <span class="text-gray-700">Facebook</span>
                   </label>
                   <label class="flex items-center space-x-2">
-                    <input type="radio" name="company" value="company2" class="text-indigo-600 focus:ring-indigo-500">
-                    <span class="text-gray-700">Company 2</span>
+                    <input type="radio" name="company" value="tesla" class="text-indigo-600 focus:ring-indigo-500">
+                    <span class="text-gray-700">Tesla</span>
                   </label>
                   <!-- Add more companies as needed -->
                 </div>
+                
               </div>
 
              
@@ -744,4 +750,15 @@
       })
       .catch(error => console.error('Error loading footer:', error));
 </script>
+<script>
+  // Get the current page URL
+  document.addEventListener("DOMContentLoaded", function() {
+    const currentPage = window.location.pathname.split("/").pop();
+console.log(currentPage);  // Check the value
+document.getElementById(currentPage)?.classList.add('active');
+
+  })
+ 
+</script>
+
 </html>  

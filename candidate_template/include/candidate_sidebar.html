@@ -13,27 +13,33 @@
             </div>
             <ul class="ml-6 mt-2 space-y-1 hidden" id="profileItems">
                 <li>
-                    <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
+                    <a href="../../candidate_template/candidate_dashboard.html" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
                         <i class="fas fa-eye mr-2"></i>
                         View Profile
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
+                    <a href="../../candidate_template/personal_education.html" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
                         <i class="fas fa-graduation-cap mr-2"></i>
                         Education
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
-                        <i class="fas fa-skill mr-2"></i>
-                        Skills
+                    <a href="../../candidate_template/personal_experience.html" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
+                        <i class="fas fa-tasks mr-2"></i>
+                        Experience
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
-                        <i class="fas fa-tasks mr-2"></i>
-                        Experience
+                    <a href="../../candidate_template/personal_project.html" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
+                        <i class="fas fa-project-diagram mr-2"></i>
+                        Project
+                    </a>
+                </li>
+                <li>
+                    <a href="../../candidate_template/personal_skill.html" class="flex items-center p-2 text-gray-300 hover:bg-indigo-600 rounded-md">
+                        <i class="fas fa-gear mr-2"></i>
+                        Skills
                     </a>
                 </li>
             </ul>
@@ -53,14 +59,3 @@
     </ul>
 </aside>
 
-
-<script>
-    const currentUrl = window.location.href; 
-const links = document.querySelectorAll('a'); 
-links.forEach(link => {
-  if (link.href === currentUrl) {
-    link.classList.add('bg-indigo-700'); // Adds background to the active link
-  }
-});
-
-</script>
